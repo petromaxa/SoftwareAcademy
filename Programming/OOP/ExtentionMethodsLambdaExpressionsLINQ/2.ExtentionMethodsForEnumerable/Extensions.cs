@@ -9,7 +9,7 @@ namespace _2.ExtentionMethodsForEnumerable
     {
         // Sum method
         public static decimal Sum<T>(this IEnumerable<T> enumeration)
-            where T: struct, IComparable<T>
+            where T: struct
         {
             if (enumeration.ToList().Count == 0)
             {
@@ -36,7 +36,7 @@ namespace _2.ExtentionMethodsForEnumerable
 
         //Product method
         public static decimal Product<T>(this IEnumerable<T> enumeration)
-            where T : struct, IComparable<T>
+            where T : struct
         {
             if (enumeration.ToList().Count == 0)
             {
@@ -58,21 +58,21 @@ namespace _2.ExtentionMethodsForEnumerable
         }
 
         // Min method
-        public static decimal Min<T>(this IEnumerable<T> enumeration)
-            where T : struct, IComparable<T>
+        public static T Min<T>(this IEnumerable<T> enumeration)
+            where T : IComparable<T>
         {
             if (enumeration.ToList().Count == 0)
             {
                 throw new ArgumentException("Cannot find the Minimal element of an empty enumeration!");
             }
-            decimal minimal = Decimal.MaxValue;
+            T minimal = enumeration.ToList()[0];
             try
             {
                 foreach (var element in enumeration)
                 {
-                    if (minimal > Convert.ToDecimal(element))
+                    if (minimal.CompareTo(element) > 0)
                     {
-                        minimal = Convert.ToDecimal(element);
+                        minimal = element;
                     }
                 }
             }
@@ -84,21 +84,21 @@ namespace _2.ExtentionMethodsForEnumerable
         }
 
         // Max method
-        public static decimal Max<T>(this IEnumerable<T> enumeration)
-            where T : struct, IComparable<T>
+        public static T Max<T>(this IEnumerable<T> enumeration)
+            where T : IComparable<T>
         {
             if (enumeration.ToList().Count == 0)
             {
                 throw new ArgumentException("Cannot find the Minimal element of an empty enumeration!");
             }
-            decimal maximal = Decimal.MinValue;
+            T maximal = enumeration.ToList()[0];
             try
             {
                 foreach (var element in enumeration)
                 {
-                    if (maximal < Convert.ToDecimal(element))
+                    if (element.CompareTo(maximal) > 0)
                     {
-                        maximal = Convert.ToDecimal(element);
+                        maximal = element;
                     }
                 }
             }
@@ -112,7 +112,7 @@ namespace _2.ExtentionMethodsForEnumerable
 
         // Average method
         public static decimal Average<T>(this IEnumerable<T> enumeration)
-            where T : struct, IComparable<T>
+            where T : struct
         {
             if (enumeration.ToList().Count == 0)
             {
