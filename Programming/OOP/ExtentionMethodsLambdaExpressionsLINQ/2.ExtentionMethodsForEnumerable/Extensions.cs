@@ -65,20 +65,15 @@ namespace _2.ExtentionMethodsForEnumerable
             {
                 throw new ArgumentException("Cannot find the Minimal element of an empty enumeration!");
             }
+
+            //Assign the first element to be the minimal one
             T minimal = enumeration.ToList()[0];
-            try
+            foreach (var element in enumeration)
             {
-                foreach (var element in enumeration)
+                if (minimal.CompareTo(element) > 0)
                 {
-                    if (minimal.CompareTo(element) > 0)
-                    {
-                        minimal = element;
-                    }
+                    minimal = element;
                 }
-            }
-            catch (FormatException)
-            {
-                throw new FormatException("The element cannot be converted to Decimal number!");
             }
             return minimal;
         }
@@ -91,20 +86,15 @@ namespace _2.ExtentionMethodsForEnumerable
             {
                 throw new ArgumentException("Cannot find the Minimal element of an empty enumeration!");
             }
+            
+            //Assign the first element to be the maximal one
             T maximal = enumeration.ToList()[0];
-            try
+            foreach (var element in enumeration)
             {
-                foreach (var element in enumeration)
+                if (element.CompareTo(maximal) > 0)
                 {
-                    if (element.CompareTo(maximal) > 0)
-                    {
-                        maximal = element;
-                    }
+                    maximal = element;
                 }
-            }
-            catch (FormatException)
-            {
-                throw new FormatException("The element cannot be converted to Decimal number!");
             }
             return maximal;
         }
@@ -118,7 +108,7 @@ namespace _2.ExtentionMethodsForEnumerable
             {
                 throw new ArgumentException("Cannot find the Average of an empty enumeration!");
             }
-            decimal average = enumeration.Sum()/enumeration.ToList().Count;
+            decimal average = enumeration.Sum() / enumeration.ToList().Count;
             return average;
         }
     }
