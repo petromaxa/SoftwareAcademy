@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.StringBuilderSubstring", "1.StringBuilderSubstring\1.StringBuilderSubstring.csproj", "{E85019ED-A18D-43BA-A1FE-F1136C8AE9B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ExtentionMethodsForEnumerable", "2.ExtentionMethodsForEnumerable\2.ExtentionMethodsForEnumerable.csproj", "{9A3B8C55-8CE7-489C-8844-4512821C67D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{E85019ED-A18D-43BA-A1FE-F1136C8AE9B3}.Debug|x86.Build.0 = Debug|x86
 		{E85019ED-A18D-43BA-A1FE-F1136C8AE9B3}.Release|x86.ActiveCfg = Release|x86
 		{E85019ED-A18D-43BA-A1FE-F1136C8AE9B3}.Release|x86.Build.0 = Release|x86
+		{9A3B8C55-8CE7-489C-8844-4512821C67D9}.Debug|x86.ActiveCfg = Debug|x86
+		{9A3B8C55-8CE7-489C-8844-4512821C67D9}.Debug|x86.Build.0 = Debug|x86
+		{9A3B8C55-8CE7-489C-8844-4512821C67D9}.Release|x86.ActiveCfg = Release|x86
+		{9A3B8C55-8CE7-489C-8844-4512821C67D9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
