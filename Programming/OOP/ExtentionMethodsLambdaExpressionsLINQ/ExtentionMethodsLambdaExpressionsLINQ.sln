@@ -5,6 +5,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.StringBuilderSubstring", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ExtentionMethodsForEnumerable", "2.ExtentionMethodsForEnumerable\2.ExtentionMethodsForEnumerable.csproj", "{9A3B8C55-8CE7-489C-8844-4512821C67D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.FindStudensByFirstAndLastName", "3.FindStudensByFirstAndLastName\3.FindStudensByFirstAndLastName.csproj", "{71D8B46B-1327-4DFE-907B-4349688ABDF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.FindStudentsByAge", "4.FindStudentsByAge\4.FindStudentsByAge.csproj", "{FD0BFC0E-CB73-46A4-A1B3-3828646BD508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.SortStudentsInDescendingOrder", "5.SortStudentsInDescendingOrder\5.SortStudentsInDescendingOrder.csproj", "{1D933E2F-E025-412D-B538-B14F09CD0C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.PrintNumbersDivisibleBy3And7", "6.PrintNumbersDivisibleBy3And7\6.PrintNumbersDivisibleBy3And7.csproj", "{F47505C7-973B-407A-A28A-EE6518822BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.Timer", "7.Timer\7.Timer.csproj", "{F9BA177C-4788-44FC-BD9A-48A346EE108F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +29,26 @@ Global
 		{9A3B8C55-8CE7-489C-8844-4512821C67D9}.Debug|x86.Build.0 = Debug|x86
 		{9A3B8C55-8CE7-489C-8844-4512821C67D9}.Release|x86.ActiveCfg = Release|x86
 		{9A3B8C55-8CE7-489C-8844-4512821C67D9}.Release|x86.Build.0 = Release|x86
+		{71D8B46B-1327-4DFE-907B-4349688ABDF1}.Debug|x86.ActiveCfg = Debug|x86
+		{71D8B46B-1327-4DFE-907B-4349688ABDF1}.Debug|x86.Build.0 = Debug|x86
+		{71D8B46B-1327-4DFE-907B-4349688ABDF1}.Release|x86.ActiveCfg = Release|x86
+		{71D8B46B-1327-4DFE-907B-4349688ABDF1}.Release|x86.Build.0 = Release|x86
+		{FD0BFC0E-CB73-46A4-A1B3-3828646BD508}.Debug|x86.ActiveCfg = Debug|x86
+		{FD0BFC0E-CB73-46A4-A1B3-3828646BD508}.Debug|x86.Build.0 = Debug|x86
+		{FD0BFC0E-CB73-46A4-A1B3-3828646BD508}.Release|x86.ActiveCfg = Release|x86
+		{FD0BFC0E-CB73-46A4-A1B3-3828646BD508}.Release|x86.Build.0 = Release|x86
+		{1D933E2F-E025-412D-B538-B14F09CD0C88}.Debug|x86.ActiveCfg = Debug|x86
+		{1D933E2F-E025-412D-B538-B14F09CD0C88}.Debug|x86.Build.0 = Debug|x86
+		{1D933E2F-E025-412D-B538-B14F09CD0C88}.Release|x86.ActiveCfg = Release|x86
+		{1D933E2F-E025-412D-B538-B14F09CD0C88}.Release|x86.Build.0 = Release|x86
+		{F47505C7-973B-407A-A28A-EE6518822BA1}.Debug|x86.ActiveCfg = Debug|x86
+		{F47505C7-973B-407A-A28A-EE6518822BA1}.Debug|x86.Build.0 = Debug|x86
+		{F47505C7-973B-407A-A28A-EE6518822BA1}.Release|x86.ActiveCfg = Release|x86
+		{F47505C7-973B-407A-A28A-EE6518822BA1}.Release|x86.Build.0 = Release|x86
+		{F9BA177C-4788-44FC-BD9A-48A346EE108F}.Debug|x86.ActiveCfg = Debug|x86
+		{F9BA177C-4788-44FC-BD9A-48A346EE108F}.Debug|x86.Build.0 = Debug|x86
+		{F9BA177C-4788-44FC-BD9A-48A346EE108F}.Release|x86.ActiveCfg = Release|x86
+		{F9BA177C-4788-44FC-BD9A-48A346EE108F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
