@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>1.CompareTwoInteger</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write an if statement that examines two integer variables and exchanges their values if the first one is greater than the second one.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var a = prompt("Enter a:");
+		a = parseInt(a);
+		jsConsole.writeLine("a = " + a);
+		
+		var b = prompt("Enter b:");
+		b = parseInt(b);
+		jsConsole.writeLine("b = " + b);
+		
+		if (a > b)
+		{
+			var c = a;
+			a = b;
+			b = c;
+		}
+		jsConsole.writeLine("New values:");
+		jsConsole.writeLine("a = " + a);
+		jsConsole.writeLine("b = " + b);
+	</script>
+</body>
+</html>

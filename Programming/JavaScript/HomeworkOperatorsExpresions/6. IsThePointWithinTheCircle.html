@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>6.IsThePointWithinTheCircle</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write an expression that checks if given print (x,  y) is within a circle K(O, 5).");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var check = false;
+		var X = prompt("Enter X:");
+		X = parseInt(X);
+		jsConsole.writeLine("X = " + X);
+		
+		var Y = prompt("Enter Y:");
+		Y = parseInt(Y);
+		jsConsole.writeLine("Y = " + Y);
+
+		if ((X * X + Y * Y) <= 25)
+		{
+			check = true;
+		}
+		jsConsole.writeLine("Is the point (" + X + "," + Y + ") within the circle K(0,5)?");
+		jsConsole.writeLine("The result of the check is: " + check);
+	</script>
+</body>
+</html>

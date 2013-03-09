@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>8.NumberToTextConverter</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write a script that converts a number in the range [0...999] to a text corresponding to its English pronunciation. Examples: </br>0 ? Zero </br>273 ? Two hundred seventy three</br>400 ? Four hundred</br>501 ? Five hundred and one</br>711 ? Seven hundred and eleven");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var numbers = [
+							["one","two","three","four","five","six","seven","eight","nine"],
+							["eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"],
+							["ten","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"]
+						];
+		
+		var number = prompt("Enter a number:");
+		number = parseInt(number);
+		jsConsole.writeLine("number = " + number);
+
+		if ((Math.floor(number / 100)) > 0)//Are there any hundreds?
+		{
+			jsConsole.write(numbers[0][(Math.floor(number / 100) - 1)] + " hundred ");
+			if (Math.floor((number % 100) / 10) > 0)//Are there any tens?
+			{
+				jsConsole.write("and ");
+				if (Math.floor((number % 100) / 10) == 1 && (number % 100) % 10 > 0)//Are the tens between 10 and 20?
+				{
+					jsConsole.writeLine(numbers[1][((number % 100) % 10) - 1]);
+				}
+				else
+				{
+					jsConsole.write(numbers[2][Math.floor((number % 100) / 10) - 1]);
+					if ((number % 100) % 10 > 0)//Are there any units?
+					{
+						jsConsole.writeLine(" " + numbers[0][((number % 100) % 10) - 1]);
+					}
+					else
+					{
+						jsConsole.writeLine();
+					}
+				}
+			}
+			else if (((number % 100) % 10) > 0)//Are there any units?
+			{
+				jsConsole.write("and ");
+				jsConsole.writeLine(numbers[0][((number % 100) % 10) - 1]);
+			}
+			else
+			{
+				jsConsole.writeLine();
+			}
+		}
+		else if (Math.floor(number / 10) > 0 && Math.floor(number / 10) < 10)//Are there only tens and units?
+		{
+			if (Math.floor(number / 10) == 1 && number % 10 > 0)//Are the tens between 10 and 20?
+			{
+				jsConsole.writeLine(numbers[1][((number % 100) % 10) - 1]);
+			}
+			else
+			{
+				jsConsole.write(numbers[2][Math.floor(number / 10) - 1]);
+				if (number % 10 > 0)
+				{
+					jsConsole.writeLine(" " + numbers[0][((number % 100) % 10) - 1]);
+				}
+				else
+				{
+					jsConsole.writeLine();
+				}
+			}
+		}
+		else if (number == 0)//Is the number 0?
+		{
+			jsConsole.writeLine("zero");
+		}
+		else//Are there only units?
+		{
+			jsConsole.writeLine(numbers[0][number - 1]);
+		}
+	</script>
+</body>
+</html>

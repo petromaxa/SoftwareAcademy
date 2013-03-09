@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>2.CheckForDevisionWithoutReminder</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var check = false;
+		var number = prompt("Enter the number:");
+		number = parseInt(number);
+		jsConsole.writeLine("number = " + number);
+		if (number % 7 == 0 && number % 5 == 0)
+		{
+			check = true;
+		}
+		jsConsole.writeLine("Is the number divisable by 7 and 5?");
+		jsConsole.writeLine("The result of the check is: " + check);
+	</script>
+</body>
+</html>

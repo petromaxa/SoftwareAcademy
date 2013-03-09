@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>2.ShowTheSignOfTheProduct</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write a script that shows the sign (+ or -) of the product of three real numbers without calculating it. Use a sequence of if statements.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var positiveNumbers = 0;
+		var a = prompt("Enter a:");
+		a = parseInt(a);
+		jsConsole.writeLine("a = " + a);
+		
+		var b = prompt("Enter b:");
+		b = parseInt(b);
+		jsConsole.writeLine("b = " + b);
+		
+		var c = prompt("Enter c:");
+		c = parseInt(c);
+		jsConsole.writeLine("c = " + c);
+
+		if ( a > 0)
+		{
+			positiveNumbers++;
+		}
+		
+		if (b > 0)
+		{
+			positiveNumbers++;
+		}
+
+		if (c > 0)
+		{
+			positiveNumbers++;
+		}
+		if (positiveNumbers % 2 == 0)
+		{
+			jsConsole.writeLine("The sign of the product is (-)");
+		}
+		else
+		{
+			jsConsole.writeLine("The sign of the product is (+)");
+		}
+	</script>
+</body>
+</html>

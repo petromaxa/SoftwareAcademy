@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>8.TrapezoidAreaCalculation</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write an expression that calculates trapezoid's area by given sides a and b and height h.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var a = prompt("Enter a:");
+		a = parseInt(a);
+		jsConsole.writeLine("a = " + a);
+		
+		var b = prompt("Enter b:");
+		b = parseInt(b);
+		jsConsole.writeLine("b = " + b);
+		
+		var h = prompt("Enter h:");
+		h = parseInt(h);
+		jsConsole.writeLine("h = " + h);
+		
+		var area = (a + b) * 0.5 * h;
+        jsConsole.writeLine("The area of the rectange is:" + area);
+	</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>3.FindTheBiggestNumberOfThree</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write a script that finds the biggest of three integers using nested if statements.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var a = prompt("Enter a:");
+		a = parseInt(a);
+		jsConsole.writeLine("a = " + a);
+		
+		var b = prompt("Enter b:");
+		b = parseInt(b);
+		jsConsole.writeLine("b = " + b);
+		
+		var c = prompt("Enter c:");
+		c = parseInt(c);
+		jsConsole.writeLine("c = " + c);
+		
+		var biggestNumber;
+		
+		if (a > b)
+		{
+			if (b > c)
+			{
+				biggestNumber = a;
+			}
+			else
+			{
+				if (c > a)
+				{
+					biggestNumber = c;
+				}
+				else
+				{
+					biggestNumber = a;
+				}
+
+			}
+
+		}
+		else
+		{
+			if (a > c)
+			{
+				biggestNumber = b;
+			}
+			else
+			{
+				if (c > b)
+				{
+					biggestNumber = c;
+				}
+				else
+				{
+					biggestNumber = b;
+				}
+
+			}
+		}
+		jsConsole.writeLine("The biggest number = " + biggestNumber);
+
+	</script>
+</body>
+</html>

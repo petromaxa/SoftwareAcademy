@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>4.Sort3RealNumbers.html</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Sort 3 real values in descending order using nested if statements.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var array = [];
+		var a = prompt("Enter a:");
+		a = parseInt(a);
+		jsConsole.writeLine("a = " + a);
+		
+		var b = prompt("Enter b:");
+		b = parseInt(b);
+		jsConsole.writeLine("b = " + b);
+		
+		var c = prompt("Enter c:");
+		c = parseInt(c);
+		jsConsole.writeLine("c = " + c);
+		
+		if (a > b)
+		{
+			if (b > c)
+			{
+				array[0] = a;
+				array[1] = b;
+				array[2] = c;
+			}
+			else
+			{
+				if (c > a)
+				{
+					array[0] = c;
+					array[1] = a;
+					array[2] = b;
+				}
+				else
+				{
+					array[0] = a;
+					array[1] = c;
+					array[2] = b;
+				}
+			}
+		}
+		else
+		{
+			if (a > c)
+			{
+				array[0] = b;
+				array[1] = a;
+				array[2] = c;
+			}
+			else
+			{
+				if (c > b)
+				{
+					array[0] = c;
+					array[1] = b;
+					array[2] = a;
+				}
+				else
+				{
+					array[0] = b;
+					array[1] = c;
+					array[2] = a;
+				}
+
+			}
+		}			
+		jsConsole.writeLine("The descending order is:");
+		jsConsole.writeLine(array[0]);
+		jsConsole.writeLine(array[1]);
+		jsConsole.writeLine(array[2]);
+	</script>
+</body>
+</html>

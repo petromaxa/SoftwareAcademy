@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>4.CheckIfThirdDigitIs7</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write an expression that checks for given integer if its third digit (right-to-left) is 7. E. g. 1732 ? true.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var check = false;
+		var number = prompt("Enter the number:");
+		number = parseInt(number);
+		jsConsole.writeLine("number = " + number);
+		if (number % 1000 > 699 && number % 1000 < 800)
+		{
+			check = true;
+		}
+		jsConsole.writeLine("Is the third digit equal to 7?");
+		jsConsole.writeLine("The result of the check is: " + check);
+	</script>
+</body>
+</html>

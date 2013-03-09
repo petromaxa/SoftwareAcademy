@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>3.CalculationOfRectange'sArea</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write an expression that calculates rectangle’s area by given width and height.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var height = prompt("Enter the height of the rectange::");
+		height = parseInt(height);
+		jsConsole.writeLine("height = " + height);
+		
+		var wight = prompt("Enter the wight of the rectange:");
+		wight = parseInt(wight);
+		jsConsole.writeLine("wight = " + wight);
+		var area = height * wight;
+		jsConsole.writeLine("The area of the rectange is = " + area);
+	</script>
+</body>
+</html>

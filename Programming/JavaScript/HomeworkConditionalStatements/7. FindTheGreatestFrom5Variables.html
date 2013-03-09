@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>7.FindTheGreatestFrom5Variables</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write a script that finds the greatest of given 5 variables.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var array = [1,4,10,-10,3];
+		
+		var greatest = array[0];
+		
+		jsConsole.writeLine("array[0] = " + array[0]);
+		for (var i = 1; i < 5; i++)
+		{
+			jsConsole.writeLine("array[" + i + "] = " + array[i]);
+			if(array[i] > greatest)
+			{
+				greatest = array[i];
+			}
+		}
+		jsConsole.writeLine("The greatest number = " + greatest);
+	</script>
+</body>
+</html>

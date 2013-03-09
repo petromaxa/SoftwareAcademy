@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>7.CheckIfANumberIsPrime</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		jsConsole.writeLine("Write an expression that checks if given positive integer number n (n ? 100) is prime. E.g. 37 is prime.");
+		jsConsole.writeLine("------------------------------------------------------------------------------");
+		
+		var isPrime = true;
+		var number = prompt("Enter the number:");
+		number = parseInt(number);
+		jsConsole.writeLine("number = " + number);
+		
+		for (var i = 2; i <= Math.sqrt(number); i++)
+		{
+			if (number % i == 0)
+			{
+				isPrime = false;
+			}
+		}
+		jsConsole.writeLine("Is this a prime number?: " + isPrime);
+	</script>
+</body>
+</html>
