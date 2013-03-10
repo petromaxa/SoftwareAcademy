@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Shape", "1.Shape\1.Shape.csproj", "{A95D40B8-C77E-4AE8-8E5C-C0E5F6784B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.BankSystem", "2.BankSystem\2.BankSystem.csproj", "{402F2B51-2AD4-438B-A495-E55612C0E5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Exeption", "3.Exeption\3.Exeption.csproj", "{06322CD6-79AE-4A44-BA10-3F064BECFCC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A95D40B8-C77E-4AE8-8E5C-C0E5F6784B96}.Debug|x86.ActiveCfg = Debug|x86
+		{A95D40B8-C77E-4AE8-8E5C-C0E5F6784B96}.Debug|x86.Build.0 = Debug|x86
+		{A95D40B8-C77E-4AE8-8E5C-C0E5F6784B96}.Release|x86.ActiveCfg = Release|x86
+		{A95D40B8-C77E-4AE8-8E5C-C0E5F6784B96}.Release|x86.Build.0 = Release|x86
+		{402F2B51-2AD4-438B-A495-E55612C0E5EB}.Debug|x86.ActiveCfg = Debug|x86
+		{402F2B51-2AD4-438B-A495-E55612C0E5EB}.Debug|x86.Build.0 = Debug|x86
+		{402F2B51-2AD4-438B-A495-E55612C0E5EB}.Release|x86.ActiveCfg = Release|x86
+		{402F2B51-2AD4-438B-A495-E55612C0E5EB}.Release|x86.Build.0 = Release|x86
+		{06322CD6-79AE-4A44-BA10-3F064BECFCC5}.Debug|x86.ActiveCfg = Debug|x86
+		{06322CD6-79AE-4A44-BA10-3F064BECFCC5}.Debug|x86.Build.0 = Debug|x86
+		{06322CD6-79AE-4A44-BA10-3F064BECFCC5}.Release|x86.ActiveCfg = Release|x86
+		{06322CD6-79AE-4A44-BA10-3F064BECFCC5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
