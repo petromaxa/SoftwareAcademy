@@ -185,12 +185,7 @@
 		        if (this.isOnWater) {
 		            for (var i = 0; i < this.propulsionUnits.length; i++) {
 		                if (this.propulsionUnits[i] instanceof Propeler) {
-		                    if (this.propulsionUnits[i].getAcceleration instanceof Function) {
 		                        this.speed = this.speed + this.propulsionUnits[i].getAcceleration();
-		                    }
-		                    else {
-		                        this.speed = this.speed + this.propulsionUnits[i].getAcceleration;
-		                    }
 		                }
 		            }
 		        }
