@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3.SpecialConsole</title>
+</head>
+<body>
+    <p>Result is in the console</p>
+	<script>
+	    //Create a module to work with the console object.Implement functionality for:
+	    //Writing a line to the console 
+	    //Writing a line to the console using a format
+	    //Writing to the console should call toString() to each element
+	    //Writing errors and warnings to the console with and without format
+	    var specialConsole = (function () {
+
+	        function format () {
+	            var mainString = arguments[0];
+	            for (var i = 0; i < arguments.length - 1; i++) {
+	                var reg = new RegExp("\\{" + i + "\\}", "gm");
+	                mainString = mainString.replace(reg, arguments[i + 1]);
+	            }
+	            return mainString;
+	        }
+
+	        this.writeLine = function () {
+	            var result = format.apply(this, arguments);
+	            console.log(result.toString());
+	        }
+
+	        this.writeError = function () {
+	            var result = format.apply(this, arguments);
+	            console.error(result.toString());
+	        }
+
+	        this.writeWarning = function () {
+	            var result = format.apply(this, arguments);
+	            console.warn(result.toString());
+	        }
+
+	        return {
+	            writeLine: writeLine,
+	            writeError: writeError,
+	            writeWarning: writeWarning
+	        };
+	    })();
+
+	    specialConsole.writeLine("Friends");
+	    specialConsole.writeLine("{0}, {1} and {2} are friends!", "Pesho", "Gosho", "Ivan");
+	    specialConsole.writeError("Friends");
+	    specialConsole.writeWarning("Friends");
+	    specialConsole.writeLine(specialConsole);
+	    specialConsole.writeLine(1 + 1);
+	</script>
+</body>
+</html>
